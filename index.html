@@ -1,1 +1,42 @@
-Holi
+<html>
+    <title>Clase01</title>
+    <body>
+
+    </body>
+    <script>
+
+        //JSON
+        const triangulos = [
+            {
+                "base": 16,
+                "altura": 17
+            },
+            {
+                "base": 8,
+                "altura": 5
+            },
+            {
+                "base": 30,
+                "altura": 25
+            },
+            {
+                "base": 4,
+                "altura": 5
+            },
+            {
+                "base": 10,
+                "altura": 7
+            },           
+        ];  
+        function area(base, altura) {
+            console.log((base*altura)/2);    
+        }
+        /*for (let i=0; i<edades.length; i++){
+            console.log(edades[i]+1);
+        } */
+        triangulos.forEach((e) => {
+            // es legal
+            area(e.base, e.altura);            
+        });
+    </script>
+</html>
